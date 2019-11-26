@@ -10,7 +10,9 @@ implementation 'com.ysb:zbar:0.0.4'
 Map map = ZBarDecode.syncDecodeQRCode(bitmap);
 
 //解码的code
+
 String text  map.get("text").toString(),
 
 //code的类型，仅支持EAN_13、CODE_128，二维码QR_CODE
+
 String barcodeFormat = map.get("BarcodeFormat").toString()
